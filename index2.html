@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container .item {
+            background-color: rgb(43, 117, 255);
+        }
+        .main-container > .item {
+            background-color: rgb(255, 47, 175);
+            padding: 10px;
+        }
+        .button {
+            background-color: rgb(88, 255, 88);
+            border: 0;
+            padding: 10px;
+        }
+        .button.active {
+            background-color: rgb(182, 176, 176);
+        }
+        .button.danger {
+            background-color: rgb(252, 66, 66);
+        }
+        .item1 + .item2 {
+            background-color: rgb(255, 228, 74);
+        }
+        input[type=text] {
+            background-color: pink;
+            border: 1px solid black;
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. item เป็นลูกของ Container -->
+    <div class="container">
+        Container
+        <div class="item">
+            Item
+        </div>
+    </div>
+
+    <!-- 2. item เป็นลูกของ Container แค่ชั้นเดียว -->
+    <div class="main-container">
+        Container
+        <div class="item">
+            Item
+            <div class="item">
+                Item 1
+            </div>
+            <div class="item">
+                Item 2
+            </div>
+            <div class="item">
+                Item 3
+            </div>
+        </div>
+    </div>
+    
+    <!-- 3. มี class ติดกัน -->
+    <button class="button">ปุ่ม</button>
+    <button class="button active">ปุ่ม</button>
+    <button class="button danger">ปุ่ม</button>
+    
+    <!-- 4. เพื่อนกัน (adjacent) -->
+    <div class="item1">Item 1</div>
+    <div class="item2">Item 2</div>
+
+    <!-- 5. attribute selector -->
+    <input type="text" name="username">
+    <input type="text" name="password">
+    <input type="text" name="email">
+    
+</body>
+</html>
