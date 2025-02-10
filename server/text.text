@@ -1,0 +1,23 @@
+docker run -p 80:80 nginx //
+docker rm d0b38f13a22a //
+docker ps --all //
+docker run -d -p 8070:80 nginx //
+http://localhost:8070/ //
+2562a78c7e1b //
+docker ps //
+docker exec -it 2562a78c7e1b bash //
+ls // list files
+pwd //
+cd //
+cd etc //
+cd nginx/ //
+cat nginx.conf //
+cd .. //
+exit //
+docker stop 2562a78c7e1b // stop container //
+docker system prune // remove all stopped containers ตอบ y
+docker rm -f $(docker ps -aq) //
+docker-compose down -v //
+docker-compose up -d //
+npx nodemon index.js  
+npm i body-parser
