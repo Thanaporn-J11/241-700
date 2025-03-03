@@ -19,5 +19,5 @@ docker system prune // remove all stopped containers ตอบ y
 docker rm -f $(docker ps -aq) //
 docker-compose down -v //
 docker-compose up -d //
-npx nodemon index.js  
-npm i body-parser
+npx nodemon index.js  //
+npm i body-parser//
