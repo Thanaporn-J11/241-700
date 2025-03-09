@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Kanit';
+    background-color: #FBF3B9;
 }
 
 .container {
@@ -14,7 +15,7 @@ body {
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
-    background-color: azure;
+    background-color: #B7B1F2;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -51,8 +52,26 @@ textarea {
     border: 0;
     width: 50%;
     height: 40px;
-    background-color: pink;
+    background-color: #BFECFF;
 }
+
+.message {
+    margin-buttom: 10px;
+    padding: 10px;
+    background-color: lightgray;
+    display: none;
+}
+
+.message.success {
+    background-color: #A1EEBD;
+    display: block;
+}
+
+.message.danger {
+    background-color: #FF76CE;
+    display: block;
+}
+
 @media screen and (max-width: 768px) {
     .flex {
         flex-direction: column;

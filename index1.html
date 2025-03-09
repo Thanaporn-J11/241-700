@@ -14,27 +14,27 @@
         </div>
         <div class="flex form-input">
             <div class="header-form">ชื่อ</div>
-            <input class="form" type="text">
+            <input class="form" name="firstname" type="text">
         </div>
         <div class="flex form-input">
             <div class="header-form">นามสกุล</div>
-            <input class="form" type="text">
+            <input class="form" name="lastname" type="text">
         </div>
         <div class="flex form-input">
             <div class="header-form">อายุ</div>
-            <input class="form" type="number" min="0" max="100">
+            <input class="form" name="age" type="number" min="0" max="100">
         </div>
         <div class="flex gender form-input">
             <div class="header-form">เพศ</div>
             <div class="flex">
                 <div>
-                    <input name="gender" type="radio"> ชาย
+                    <input name="gender" type="radio" value="ชาย"> ชาย
                 </div>
                 <div>
-                    <input name="gender" type="radio"> หญิง
+                    <input name="gender" type="radio" value="หญิง"> หญิง
                 </div>
                 <div>
-                    <input name="gender" type="radio"> อื่น ๆ
+                    <input name="gender" type="radio" value="อื่น ๆ"> อื่น ๆ
                 </div>
             </div>
         </div>
@@ -42,22 +42,29 @@
 <div class="form-input">
     <div class="form">งานอดิเรก</div>
     <div>
-        <input name="interest" type="checkbox"> อ่านหนังสือ
+        <input name="interest" type="checkbox" value="อ่านหนังสือ"> อ่านหนังสือ
     </div>
     <div>
-        <input name="interest" type="checkbox"> ดูหนัง
+        <input name="interest" type="checkbox" value="ดูหนัง"> ดูหนัง
     </div>
     <div>
-        <input name="interest" type="checkbox"> ฟังเพลง
+        <input name="interest" type="checkbox" value="ฟังเพลง"> ฟังเพลง
     </div>
 </div>
 <div class="form-input">
     คำอธิบาย
-    <textarea></textarea>
+    <textarea name="description"></textarea>
 </div>
+
+<div id= message class="message"></div>
+
 <div class="center">
-    <button class="button">ส่งข้อมูล</button>
+    <button onclick="submitData()" class="button">ส่งข้อมูล</button>
 </div>
+</div>
+<div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="index.js"></script>
 </div>
 </div>
 
